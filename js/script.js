@@ -1,22 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ================= TAB SWITCH =================
+
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const target = btn.dataset.tab;
 
-      // reset
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
 
-      // activate
+   
       btn.classList.add('active');
       const panel = document.getElementById(target);
       if (panel) panel.classList.add('active');
     });
   });
 
-  // ================= PASSWORD TOGGLE =================
+
   document.querySelectorAll('.toggle-password').forEach(icon => {
     icon.addEventListener('click', () => {
       const input = icon.previousElementSibling;
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ================= VALIDATION =================
+
 function validatePhone() {
   checkField('phoneInput', 'phoneError');
   checkField('phonePassword', 'phonePassError');
@@ -59,8 +58,6 @@ function checkField(inputId, errorId) {
   }
 }
 
-
-// ================= EXTERNAL LINKS =================
 function goGoogle() {
   window.open('https://accounts.google.com', '_blank', 'noopener');
 }
@@ -70,7 +67,8 @@ function goApple() {
 }
 
 
-// ================= UI ONLY =================
+
 function showUiOnly() {
   alert('This is UI only. No API is connected.');
 }
+
