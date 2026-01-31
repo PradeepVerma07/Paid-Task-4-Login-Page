@@ -256,7 +256,7 @@ select:focus {
 }
 
 .orange {
-  color: #f60;
+  color: #FF4F29;
 }
 
 @media (max-width: 1200px) {
@@ -337,6 +337,7 @@ select:focus {
     font-size: 13px;
   }
 }
+
 
 
 
