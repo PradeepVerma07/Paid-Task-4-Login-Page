@@ -128,13 +128,13 @@ select {
 
 input:hover,
 select:hover {
-  border-color: #1d2939; /* soft black (not pure black) */
+  border-color: #1d2939; 
 }
 
 input:focus,
 select:focus {
   outline: none;
-  border-color: #1d2939; /* or #3b82f6 if you prefer blue */
+  border-color: #1d2939;
 }
 
 
@@ -161,7 +161,7 @@ select:focus {
 }
 
 .error-input {
-  border-color: #f04438 !important; /* red border */
+  border-color: #f04438 !important;
 }
 .error
 
@@ -189,6 +189,11 @@ select:focus {
   font-size: 16px;
   cursor: pointer;
 }
+.btn-primary :hover,
+select:hover {
+  border-color: #ff7152;
+}
+
 
 .oauth {
   width: 380px;
@@ -342,5 +347,6 @@ select:focus {
     font-size: 13px;
   }
 }
+
 
 
